@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/commom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-parent/eureka-server01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-parent/eureka-server02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-parent/eureka-server03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-parent/eureka-server03/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server05/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/good-provide01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/good-provide02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_transactional/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springbootRabbitMQ-Consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springbootRabbitMQ-Producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-server-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/student-comsumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-provide/src/main/java" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,17 @@
+server:
+  port: 18085
+spring:
+  application:
+    name: transactional
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/foodiedev?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server01:2001/eureka/ #
+  instance:
+    prefer-ip-address: true #访问服务的时候，推荐使用IP（访问本服务的时候推荐使用此IP，然后在Euraka的状态显示中显示的是Ip地址而不是主机名，消费者获取的时候也是获取ip地址）

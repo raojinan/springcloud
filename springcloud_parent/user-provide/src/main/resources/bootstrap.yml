@@ -1,0 +1,31 @@
+# 注释版本
+spring:
+  cloud:
+    config:
+      name: user-provide # 与远程仓库中的配置文件的application保持一致，{application}-{profile}.yml
+      profile: dev # 远程仓库中的配置文件的profile保持一致
+      label: master # 远程仓库中的版本保持一致
+      discovery:
+        enabled: true # 使用配置中心
+        service-id: config-center # 配置中心服务id
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/foodiedev?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true #打印sql语句 OA CRM 控制台显示SQL
+    database: mysql
+    generate-ddl: true #建表策略
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+#向Eureka服务中心集群注册服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka

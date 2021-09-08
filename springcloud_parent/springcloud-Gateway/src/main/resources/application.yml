@@ -1,0 +1,28 @@
+server:
+  port: 18084
+spring:
+  application:
+    name: gateway # 应用名
+  cloud:
+    gateway:
+      routes:
+        #id唯一标识，可自定义
+        - id: provide-service-route
+          #路由的服务地址
+          #uri: http://localhost:3002
+          #负载均衡动态调用微服务
+          uri: lb://good-provide
+          # 路由拦截的地址配置（断言）
+          predicates:
+            - Path=/provide/**
+          filters: #局部过滤器
+            - StripPrefix=1 # 去除访问地址的第一，再路由到上方uri的微服务
+      default-filters: #全局过滤器
+        - AddResponseHeader=X-Response-Default-MyName,itan
+
+# Eureka服务中心配置
+eureka:
+  client:
+    service-url:
+      # 注册Eureka Server集群
+      defaultZone: http://127.0.0.1:7001/eureka

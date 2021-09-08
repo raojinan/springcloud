@@ -1,0 +1,12 @@
+server:
+  port: 19094
+spring:
+  application:
+    name: RabbitMQ-producer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /raojinan #虚拟主机，相当于一个小型的rabbitMQ服务器，Broker：表示消息队列服务器实体
+    username: admin
+    password: admin
+

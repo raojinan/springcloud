@@ -1,0 +1,27 @@
+server:
+  port: 18091
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/raojinan/springcloudConfig.git
+    # rabbitmq的配置信息；如下配置的rabbit都是默认值，其实可以完全不配置
+    rabbitmq:
+      host: localhost
+      port: 5672
+      username: admin
+      password: admin
+# 暴露触发消息总线的地址
+management:
+  endpoints:
+    web:
+      exposure:
+        # 暴露触发消息总线的地址
+        include: bus-refresh
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #

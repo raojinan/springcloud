@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-server-api" />
+        <module name="springcloud-Gateway" />
+        <module name="springcloud-config" />
+        <module name="spring_transactional" />
+        <module name="eureka-server" />
+        <module name="student-comsumer" />
+        <module name="user-provide" />
+        <module name="commom" />
+        <module name="user-consumer" />
+        <module name="eureka-server03" />
+        <module name="eureka-server01" />
+        <module name="eureka-server02" />
+        <module name="good-provide01" />
+        <module name="good-provide02" />
+        <module name="springbootRabbitMQ-Producer" />
+        <module name="eureka-server05" />
+        <module name="springbootRabbitMQ-Consumer" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="commom" options="-parameters" />
+      <module name="eureka-parent" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="eureka-server01" options="-parameters" />
+      <module name="eureka-server02" options="-parameters" />
+      <module name="eureka-server03" options="-parameters" />
+      <module name="eureka-server05" options="-parameters" />
+      <module name="good-provide01" options="-parameters" />
+      <module name="good-provide02" options="-parameters" />
+      <module name="spring_transactional" options="-parameters" />
+      <module name="springbootRabbitMQ-Consumer" options="-parameters" />
+      <module name="springbootRabbitMQ-Producer" options="-parameters" />
+      <module name="springcloud-Gateway" options="-parameters" />
+      <module name="springcloud-config" options="-parameters" />
+      <module name="springcloud-server-api" options="-parameters" />
+      <module name="student-comsumer" options="-parameters" />
+      <module name="user-consumer" options="-parameters" />
+      <module name="user-provide" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,6 @@
+com\itan\service\impl\ServiceTransactional.class
+com\itan\TransactionalApplication.class
+com\itan\service\impl\ServiceTransactionalImpl.class
+com\itan\controller\StudentController.class
+com\itan\dao\StudentDao.class
+com\itan\domain\Student.class

@@ -1,0 +1,16 @@
+server:
+  port: 3002
+spring:
+  application:
+    name: good-provide
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/foodiedev?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://eureka-server03:2003/eureka/
+      defaultZone: http://localhost:7001/eureka

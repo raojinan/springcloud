@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itan</groupId>
+    <artifactId>springcloud_parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>eureka-server</module>
+        <module>springcloud-config</module>
+        <module>user-provide</module>
+        <module>user-consumer</module>
+        <module>springbootRabbitMQ-Producer</module>
+        <module>springbootRabbitMQ-Consumer</module>
+        <module>spring_transactional</module>
+        <module>eureka-parent</module>
+        <module>eureka-server05</module>
+        <module>good-provide01</module>
+        <module>good-provide02</module>
+        <module>springcloud-server-api</module>
+        <module>student-comsumer</module>
+        <module>springcloud-Gateway</module>
+        <module>commom</module>
+    </modules>
+
+    <!--父工程-->
+    <!--父工程起到依赖版本控制，大大减低版本冲突和版本过期，开发者更加专注于业务开发的本身-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+    </parent>
+    <dependencies>
+        <!--web起步依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
+
+        <!-- 热部署 -->
+        <dependency>
+
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>2.0.4.RELEASE</version>
+
+            <!-- 启用 -->
+            <optional>true</optional>
+        </dependency>
+
+        <!--lombok 注解-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <!--SpringCloud包依赖管理-->
+    <!--SpringCloud跟springBoot是有版本对应的，2.1的springBoot对应的springCloud的Greewich版本-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
